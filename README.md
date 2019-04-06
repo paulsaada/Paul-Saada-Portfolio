@@ -9,6 +9,7 @@ I created a portfolio website showcasing my different skills and projects.
 * CSS Grids
 * Flexbox
 * PHP
+* Animate.css
 
 ## Live Demo
 
