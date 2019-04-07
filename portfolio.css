@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
-
 /*----- GLOBAL STYLES -----*/
 
 * {
@@ -8,6 +7,9 @@
     background-color: rgb(0, 0, 0);
 }
 
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     width: 80%;
@@ -21,12 +23,6 @@ body {
     padding-bottom: 125px;
     text-align: center;
     text-weight: bold;
-}
-
-.wrapper {
-    display: grid;
-    grid-gap: 20px;
-    grid-template-rows: 100px 660px;
 }
 
 /*----- HEADER -----*/
@@ -50,16 +46,35 @@ nav ul {
 }
 
 nav li {
-    font-size: 1.2em;
+    font-size: 1em;
     font-weight: bold;
     margin-left: 80px;
     justify-content: right;
     letter-spacing: 0.05em;
     text-transform: uppercase;
+    padding-bottom: 3px;
 }
 
 nav a {
     text-decoration: none;
+}
+
+nav li:hover {
+/*    border-bottom: solid 3px rgb(255, 255, 255);
+*/    /*transition: width 0.3s;*/
+}
+
+nav li::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 3px;
+    background: rgb(255, 255, 255);
+    transition: width 0.3s;
+}
+
+nav li:hover::after {
+    width: 100%;
 }
 
 /*----- INTRO SECTION -----*/
@@ -77,7 +92,8 @@ nav a {
     margin-bottom: 0;
 }
 
-.intro h2 {
+.intro h3 {
+    font-size: 1.5em;
     line-height: 35px;
     margin-bottom: 0;
 }
@@ -190,21 +206,46 @@ nav a {
 .portfolio button:hover {
     color: black;
     background-color: rgb(255, 255, 255);
+    transition: 0.4s;
 }
 
 .portfolio-buttons {
     display: flex;
 }
 
-/*----- CONTACT SECTION -----*/
-.contact {
-    display: grid;
-    text-align: center;
-    grid-template-rows: 500px;
+.colored-text {
+    /*color: #f35626;*/
+    background-image: -webkit-linear-gradient(92deg, #f35626, #feab3a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: hue 5s infinite linear;
 }
 
-.contact--form {
+@-webkit-keyframes hue {
+  from {
+    -webkit-filter: hue-rotate(0deg);
+  }
+  to {
+    -webkit-filter: hue-rotate(-360deg);
+  }
+}
+
+/*----- CONTACT SECTION -----*/
+.contact-title {
+    font-size: 4.3em;
+    padding-top: 75px;
+    padding-bottom: 75px;
+    text-align: center;
+    text-weight: bold;
+}
+
+.contact {
+    text-align: center;
+}
+
+.contact-form {
     height: 450px;
+    padding-bottom: 200px;
 }
 
 /*FORM INPUT STYLES*/
@@ -220,6 +261,23 @@ textarea {
     resize: vertical;
     border: 0;
     border-bottom: .5px solid #ccc;
+}
+
+.name-field {
+    display: flex;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.first-name {
+    flex: 50%;
+    text-align: right;
+    padding-right: 20px;
+}
+
+.last-name {
+    flex: 50%;
+    text-align: left;
 }
 
 /*SUBMIT BUTTON STYLES*/
@@ -238,6 +296,7 @@ textarea {
 .contact input[type=submit]:hover {
     color: black;
     background-color: rgb(255, 255, 255);
+    transition: 0.4s;
 }
 
 /*----- MEDIA QUERIES -----*/
@@ -250,6 +309,10 @@ textarea {
 
     nav li {
         margin: 0;
+    }
+
+    nav li::after {
+        background: rgb(0, 0, 0);
     }
 }
 
@@ -276,6 +339,10 @@ textarea {
         font-size: 3.25em;
         padding-top: 100px;
         padding-bottom: 100px;
+    }
+
+    .contact-title {
+        font-size: 3.25em;
     }
 
     .intro {
@@ -334,7 +401,7 @@ textarea {
 
 @media (max-width: 685px) {
     nav li {
-        font-size: 1.2em;
+        font-size: 0.9em;
     }
 
     .intro-title {
@@ -353,7 +420,7 @@ textarea {
 
 @media (max-width: 500px) {
     nav li {
-        font-size: 1.1em;
+        font-size: 0.8em;
     }
 
     .intro-title {
@@ -373,6 +440,12 @@ textarea {
         padding-bottom: 70px;
     }
 
+    .contact-title {
+        font-size: 2.9em;
+        padding-top: 65px;
+        padding-bottom: 65px;
+    }
+
     .dev h3 {
         font-size: 1.5em;
     }
@@ -382,7 +455,7 @@ textarea {
     }
 
     .dev li {
-        line-height: 17px;
+        line-height: 20px;
     }
 
     .dev p {
@@ -398,4 +471,10 @@ textarea {
     textarea {
         font-size: 17px;
     }
+}
+
+@media (max-width: 400px) {
+    .intro {
+        padding: 60px 0 100px 0;
+    } 
 }

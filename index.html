@@ -5,14 +5,14 @@
 	<title>Paul Saada | Front-End Developer</title>
 	<meta name="author" content="Paul Saada">
 	<meta name="keywords" content="Paul Saada Portfolio Website">
-	<meta name="description" content="I'm an ambitious web developer with a creative background and a deep understanding of responsive and mobile-first design.">
+	<meta name="description" content="I'm a creative web developer with a deep understanding of responsive design. I create world-class websites to engage audiences, grow businesses, and elevate brands.">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="portfolio-min.css">
 	<link rel="stylesheet" type="text/css" href="animate.min.css">
 	<link rel="icon" href="favicon.ico" type="image/x-icon"/>
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-136874014-1"></script>
-	<script>
+	<script src="paulsaada.js">
   		window.dataLayer = window.dataLayer || [];
   		function gtag(){dataLayer.push(arguments);}
   		gtag('js', new Date());
@@ -46,17 +46,103 @@
 			</nav>
 		</header>
 
-
 		<main>
 			<article>
 				<section class="intro">
-					<h1 class="intro-title animated slower fadeIn">Hey, my name's Paul.</h1>
-					<h2 class="animated slow fadeIn delay-1s">I'm an ambitious web developer with a creative background and a deep understanding of responsive and mobile-first design</h2>
-					<h2 class="animated slow fadeIn delay-2s">I'm currently <a href="#contact">available</a> for hire</h2>
+					<h1 class="intro-title animated slow fadeIn">Hey, my name's Paul.</h1>
+					<h3 class="animated slow fadeIn delay-1s">I'm a creative web developer with a deep understanding of responsive design. I create world-class websites to engage audiences, grow businesses, and elevate brands</h3>
+					<h3 class="animated slower fadeIn delay-1s">I'm currently available for hire</h3>
 				</section>
 
+				<section>
+					<h1 class="title animated slower fadeIn" id="portfolio">Portfolio</h1>
+				</section>
+
+			<div class="portfolio">
+
+				<section class="portfolio-left animated slower fadeInRight">
+					<h3>Wells Verne Holdings Group</h3>
+					<p class="portfolio-type">HTML 5, CSS 3, Flexbox, JavaScript, PHP</p>
+					<p>Real estate and private equity holdings company, Wells Verne, needed a modern web presence that would explain it's mission statement and company objectives to prospective investors and consumers alike. They wanted a website that would reflect their values of sustainability and transparency and I was up for the challenge.</p>
+						<div class="portfolio-buttons">
+							<a href="#">
+								<button>LIVE DEMO</button>
+							</a>
+							<a href="#">
+								<button>SOURCE CODE</button>
+							</a>
+						</div>
+				</section>
+
+				<section class="portfolio-right animated slower fadeInLeft">
+					<h3>WVHG Compound Interest Calculator</h3>
+					<p class="portfolio-type">HTML 5, CSS 3, JavaScript, Charts.js</p>
+					<p>Wells Verne (WVHG) also wanted a compound interest calculator for their website visitors to be able to use. They had three stipulations; The compound interest chart had to be animated, it had to match the design and overall theme of their website, and I had to deliver the final product with no bugs. I solved their problem by creating a modern, interactive chart that I implemented using JavaScript and Charts.js. Now their visitors can determine how much their investment can grow using the power of compound interest!</p>
+					<div class="portfolio-buttons">
+							<a href="#">
+								<button>LIVE DEMO</button>
+							</a>
+							<a href="#">
+								<button>SOURCE CODE</button>
+							</a>
+						</div>
+				</section>
+
+				<!-- <section class="portfolio-right">
+					<h3>Saada Studios Photography Agency</h3>
+					<p class="portfolio-type">HTML 5, CSS 3, Flexbox</p>
+					<p>Saada Studios is a fashion photography agency. They needed a mobile-first, responsive website that would increase their conversion rates towards their target demographic of e-commerce entrepreneurs and social media influencers.</p>
+					<div class="portfolio-buttons">
+							<a href="#">
+								<button>LIVE DEMO</button>
+							</a>
+							<a href="#">
+								<button>SOURCE CODE</button>
+							</a>
+						</div>
+				</section> -->
+
+				<section class="portfolio-left animated slower fadeInRight">
+					<h3>Karl Charles Landing Page</h3>
+					<p class="portfolio-type">HTML 5, CSS 3, Flexbox, PHP</p>
+					<p>Karl Charles is an aspiring fashion model that needed a beautifully designed online business card/landing page for prospective clients to view his past work as well as be able to gain new insight into what's in store in the future for him. He was eager to get the website up as soon as possible and I worked closely with him and deployed the final product well before the deadline.</p>
+					<div class="portfolio-buttons">
+							<a href="#">
+								<button>LIVE DEMO</button>
+							</a>
+							<a href="#">
+								<button>SOURCE CODE</button>
+							</a>
+						</div>
+				</section>
+
+				<section class="portfolio-right animated slower fadeInLeft">
+					<h3>Paul Saada Web Development Portfolio</h3>
+					<p class="portfolio-type">HTML 5, CSS 3, Flexbox, PHP, Animate.CSS</p>
+					<p>You're on the live demo right now! Check this URL out on your phone to see the mobile version. How'd I do? Send me an <a href="#contact">email</a> and let me know.</p>
+					<div class="portfolio-buttons">
+							<a href="https://paulsaada.com/">
+								<button>LIVE DEMO</button>
+							</a>
+							<a href="https://github.com/paulsda/Paul-Saada-Portfolio">
+								<button>SOURCE CODE</button>
+							</a>
+						</div>
+				</section>
+
+				<section class="portfolio-left animated slower fadeInRight">
+					<h3 class="colored-text">Got a great idea for a website?</h3>
+					<p>Whether it's an idea for a complex multi-page responsive website for your organization or a mobile-first landing page for an exciting new product, I'd love to hear from you!</p>
+					<div class="portfolio-buttons">
+							<a href="#contact">
+								<button>LET'S CHAT</button>
+							</a>
+						</div>
+				</section>
+			</div>
+
 				
-				<h1 class="title animated slower fadeIn" id="dev">Developer Profile</h1>
+				<h1 class="title animated slow fadeIn" id="dev">Developer Profile</h1>
 	
 				<section class="dev">
 					<div class="profile-left animated slow fadeIn delay-1s">	
@@ -96,96 +182,19 @@
 						</div>
 					</div>
 						
-					<div class="profile-right animated slow fadeIn delay-2s">
+					<div class="profile-right animated slower fadeIn delay-2s">
 						<div>
 							<h3>About</h3>
 						</div>
 
 						<div class="dev-bio">
-							<p>I’ve been editing HTML since 2010 when I first discovered blogging and ever since then, I caught the coding bug and found ways to solve problems using my skills as a developer. In subsequent years, I’ve added CSS and JavaScript to my skillset and I’m currently capable of creating beautiful and fully-responsive websites for individuals and businesses alike.</p> 
+							<p>I’ve been editing HTML since 2010 when I first discovered blogging and ever since then, I caught the coding bug and kept finding new ways to solve problems using my skills as a developer. In subsequent years, I’ve added CSS and JavaScript to my skillset and I’m currently capable of creating beautiful and fully-responsive websites for individuals and businesses alike.</p> 
 							<p>I pride myself in adhering to the best web practices and writing/contributing clean, sustainable code for every project I undertake.</p>
 							<p>These days, I look for projects to collaborate with other developers on and finding teams where I can use my skills and interests to finding creative solutions to difficult problems.</p>
 							<p>If you’d like to speak to me about possible opportunities for a front-end developer position at your company, please don’t hesitate to <a href="#contact">contact</a> me.</p>
 						</div>
 					</div>
 				</section>
-
-				<section>
-					<h1 class="title animated slower fadeIn" id="portfolio">Portfolio</h1>
-				</section>
-
-			<div class="portfolio animated slower fadeInUp delay-1s">
-
-				<section class="portfolio-left">
-					<h3>Wells Verne Holdings Group</h3>
-					<p class="portfolio-type">HTML 5, CSS 3, Flexbox, JavaScript</p>
-					<p>Wells Verne needed a modern web presence that would explain it's mission statement and company objectives to prospective investors and consumers alike.</p>
-						<div class="portfolio-buttons">
-							<a href="#">
-								<button>LIVE DEMO</button>
-							</a>
-							<a href="#">
-								<button>SOURCE CODE</button>
-							</a>
-						</div>
-				</section>
-
-				<!-- <section class="portfolio-right">
-					<h3>Saada Studios Photography Agency</h3>
-					<p class="portfolio-type">HTML 5, CSS 3, Flexbox</p>
-					<p>Saada Studios is a fashion photography agency. They needed a mobile-first, responsive website that would increase their conversion rates towards their target demographic of e-commerce entrepreneurs and social media influencers.</p>
-					<div class="portfolio-buttons">
-							<a href="#">
-								<button>LIVE DEMO</button>
-							</a>
-							<a href="#">
-								<button>SOURCE CODE</button>
-							</a>
-						</div>
-				</section> -->
-
-				<section class="portfolio-right">
-					<h3>Karl Charles Landing Page</h3>
-					<p class="portfolio-type">HTML 5, CSS 3, Flexbox, PHP</p>
-					<p>Karl is an aspiring fashion model that needed a beautifully designed landing page and portfolio for prospective clients to view his past work and promote his services.</p>
-					<div class="portfolio-buttons">
-							<a href="#">
-								<button>LIVE DEMO</button>
-							</a>
-							<a href="#">
-								<button>SOURCE CODE</button>
-							</a>
-						</div>
-				</section>
-
-				<section class="portfolio-left">
-					<h3>Compound Interest Calculator</h3>
-					<p class="portfolio-type">HTML 5, CSS 3, JavaScript, Chart.js</p>
-					<p>Determine how much your money can grow using the power of compound interest! Plan your financial future using beautiful interactive charts that I implemented using Charts.js. Comes with a handy table too.</p>
-					<div class="portfolio-buttons">
-							<a href="#">
-								<button>LIVE DEMO</button>
-							</a>
-							<a href="#">
-								<button>SOURCE CODE</button>
-							</a>
-						</div>
-				</section>
-
-				<section class="portfolio-right">
-					<h3>Paul Saada Web-Development Portfolio</h3>
-					<p class="portfolio-type">HTML 5, CSS 3, CSS Grids, Flexbox, PHP, Animate.CSS</p>
-					<p>You're on the live demo right now! Check this URL out on your phone to see the mobile version. How'd I do? Send me an <a href="#contact">email</a> and let me know.</p>
-					<div class="portfolio-buttons">
-							<a href="index.html">
-								<button>LIVE DEMO</button>
-							</a>
-							<a href="github.com/paulsda">
-								<button>SOURCE CODE</button>
-							</a>
-						</div>
-				</section>
-			</div>
 
 				<section>
 					<h1 class="contact-title animated slower fadeIn">Contact Me</h1>
