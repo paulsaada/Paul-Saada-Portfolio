@@ -199,6 +199,7 @@ nav li:hover::after {
     cursor: pointer;
     color: rgb(255, 255, 255);
     border: 1px solid #ccc;
+    border-radius: 10px;
     background: transparent;
     justify-content: center;
 }
@@ -211,6 +212,38 @@ nav li:hover::after {
 
 .portfolio-buttons {
     display: flex;
+}
+
+.lastPortfolio-item {
+    margin-bottom: 40px;
+}
+
+.great-idea {
+    padding-bottom: 30px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 25px;
+    text-align: center;
+}
+
+.great-idea h3 {
+    font-size: 3.6em;
+}
+
+.great-idea p {
+    padding-left: 10%;
+    padding-right: 10%;
+    line-height: 30px;
+    font-size: 1.2em;
+}
+
+.great-idea .portfolio-buttons {
+    justify-content: center;
+}
+
+.great-idea button {
+    font-size: 0.85em;
+    padding: 10px 25px;
+    border-radius: 20px;
 }
 
 .colored-text {
@@ -280,7 +313,6 @@ textarea {
     text-align: left;
 }
 
-/*SUBMIT BUTTON STYLES*/
 .contact input[type=submit] {
     display: flex;
     margin: 0 auto;
@@ -288,11 +320,12 @@ textarea {
     cursor: pointer;
     color: rgb(255, 255, 255);
     border: 1px solid #ccc;
+    border-radius: 5px;
     background: transparent;
     justify-content: center;
+    margin-top: 7px;
 }
 
-/*HOVER-OVER ANIMATION*/
 .contact input[type=submit]:hover {
     color: black;
     background-color: rgb(255, 255, 255);
@@ -397,6 +430,17 @@ textarea {
     .portfolio-right .portfolio-buttons {
         justify-content: center;
     }
+
+    .great-idea h3 {
+        font-size: 2.5em;
+    }
+
+    .great-idea p {
+        padding-left: 10%;
+        padding-right: 10%;
+        line-height: 25px;
+        font-size: 1em;
+    }
 }
 
 @media (max-width: 685px) {
@@ -464,6 +508,10 @@ textarea {
 
     .portfolio h3 {
         font-size: 1.7em;
+    }
+
+    .great-idea h3 {
+        font-size: 2.3em;
     }
 
     input[type=text],
