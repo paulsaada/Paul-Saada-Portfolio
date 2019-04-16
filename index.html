@@ -8,9 +8,9 @@
 	<meta name="description" content="I'm a creative web developer with a deep understanding of responsive design. I create world-class websites to engage audiences, grow businesses, and elevate brands.">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="portfolio-min.css">
-	<link rel="stylesheet" type="text/css" href="animate.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 	<link rel="icon" href="favicon.ico" type="image/x-icon"/>
-	<script type="text/javascript" src="paulsaada.js"></script>
+	<script defer type="text/javascript" src="paulsaada-min.js"></script>
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-136874014-1">
   		window.dataLayer = window.dataLayer || [];
@@ -25,19 +25,19 @@
 	<div class="wrapper">
 		<header>
 			<h1>
-				<a href="index.html">PAUL SAADA*</a>
+				<a href="https://paulsaada.com/">PAUL SAADA*</a>
 			</h1>
 				
 			<nav>
 				<ul>
 					<li>
-						<a href="#dev">About</a>
-					</li>
-					<li>
 						<a href="#portfolio">Portfolio</a>
 					</li>
 					<li>
 						<a href="https://github.com/paulsda">GitHub</a>
+					</li>
+					<li>
+						<a href="#dev">About</a>
 					</li>
 					<li>
 						<a href="#contact">Contact</a>
@@ -48,41 +48,50 @@
 
 		<main>
 			<article>
-				<section class="intro">
-					<h1 class="intro-title animated slow fadeIn">Hey, my name's Paul.</h1>
-					<h3 class="animated slow fadeIn delay-1s">I'm a creative web developer with a deep understanding of responsive design. I create world-class websites to engage audiences, grow businesses, and elevate brands</h3>
-					<h3 class="animated slower fadeIn delay-1s">I'm currently available for hire</h3>
+				<section class="intro fade-in">
+					<h1 class="intro-title">Hey, my name's Paul.</h1>
+					<h3>I'm a creative web developer with a deep understanding of responsive design. I create world-class websites to engage audiences, grow businesses, and elevate brands</h3>
+					<h3>I'm currently available for hire</h3>
 				</section>
+				
+				<div class="large-arrow bounce">
+					<a href="#portfolio">
+						<i class="fas fa-sort-down fa-5x"></i>
+					</a>
+				</div>
+
+				<div class="small-arrow bounce">
+					<a href="#portfolio">
+						<i class="fas fa-sort-down fa-3x"></i>
+					</a>
+				</div>
 
 				<section>
-					<h1 class="title" id="portfolio">Portfolio</h1>
+					<h1 class="title hidden" id="portfolio">Portfolio</h1>
 				</section>
 
 			<div class="portfolio">
-				<section class="portfolio-left">
+				<section class="portfolio-left hidden">
 					<h3>Wells Verne Holdings Group</h3>
 					<p class="portfolio-type">HTML 5, CSS 3, Flexbox, JavaScript, PHP</p>
-					<p>Real estate and private equity holdings company, Wells Verne, needed a modern web presence that would explain it's mission statement and company objectives to prospective investors and consumers alike. They wanted a website that would reflect their values of sustainability and transparency and I was up for the challenge.</p>
+					<p>Real estate holdings and private equity group, Wells Verne, needed a modern web presence that would explain it's mission statement and company objectives to prospective investors and consumers alike. They wanted a website that would reflect their values of sustainability and social responsibility and I was up for the challenge.</p>
 						<div class="portfolio-buttons">
-							<a href="#">
+							<a href="https://wellsverne.com/">
 								<button>LIVE DEMO</button>
 							</a>
-							<a href="#">
+							<a href="https://github.com/paulsda/Wells-Verne">
 								<button>SOURCE CODE</button>
 							</a>
 						</div>
 				</section>
 
-				<section class="portfolio-right">
+				<section class="portfolio-right hidden">
 					<h3>WVHG Compound Interest Calculator</h3>
 					<p class="portfolio-type">HTML 5, CSS 3, JavaScript, Charts.js</p>
-					<p>Wells Verne (WVHG) also wanted a compound interest calculator for their website visitors to be able to use. They had three stipulations; The compound interest chart had to be animated, it had to match the design and overall theme of their website, and I had to deliver the final product with no bugs. I solved their problem by creating a modern, interactive chart that I implemented using JavaScript and Charts.js. Now their visitors can determine how much their investment can grow using the power of compound interest!</p>
+					<p>Wells Verne (WVHG) also wanted a compound interest calculator for their website visitors to be able to use. They have three stipulations; The compound interest chart has to be animated, it has to match the design and overall theme of their website, and I have to deliver the final product with no bugs. I'm creating a modern, interactive chart using JavaScript and Charts.js. Their visitors will be able to determine how much their investment can grow using the power of compound interest!</p>
 					<div class="portfolio-buttons">
-							<a href="#">
-								<button>LIVE DEMO</button>
-							</a>
-							<a href="#">
-								<button>SOURCE CODE</button>
+							<a href="#portfolio">
+								<button>UNDER CONSTRUCTION</button>
 							</a>
 						</div>
 				</section>
@@ -101,23 +110,37 @@
 						</div>
 				</section> -->
 
-				<section class="portfolio-left">
-					<h3>Karl Charles Landing Page</h3>
+				<section class="portfolio-left hidden">
+					<h3>Karl Charles Profile Website</h3>
 					<p class="portfolio-type">HTML 5, CSS 3, Flexbox, PHP</p>
-					<p>Karl Charles is an aspiring fashion model that needed a beautifully designed online business card/landing page for prospective clients to view his past work as well as be able to gain new insight into what's in store in the future for him. He was eager to get the website up as soon as possible and I worked closely with him and deployed the final product well before the deadline.</p>
+					<p>Karl Charles is an aspiring fashion model that needed a beautifully designed online business card/profile website for prospective clients to view some of his past work as well as be able to gain new insight into what's in store in the future for him. He was eager to get the website up as soon as possible and I worked closely with him and deployed the final product well before the deadline.</p>
 					<div class="portfolio-buttons">
-							<a href="#">
+							<a href="https://www.karl-charles.com/">
 								<button>LIVE DEMO</button>
 							</a>
-							<a href="#">
+							<a href="https://github.com/paulsda/Karls-Portfolio-Page">
 								<button>SOURCE CODE</button>
 							</a>
 						</div>
 				</section>
 
-				<section class="portfolio-right lastPortfolio-item">
+				<section class="portfolio-right hidden">
+					<h3>Tap Champion Game</h3>
+					<p class="portfolio-type">HTML 5, CSS 3, JavaScript</p>
+					<p>This used to be a very simple tutorial project from Colt Steele's Web Developer Bootcamp course. I revamped the UI and turned the mouse click controls into keyboard controls so two players could play. So grab a friend, agree on a score, use the Z and M keys on your keyboard to play, and the first player to reach the score wins the round!</p>
+					<div class="portfolio-buttons">
+							<a href="https://paulsda.github.io/Tap-Champion-Game/">
+								<button>LIVE DEMO</button>
+							</a>
+							<a href="https://github.com/paulsda/Tap-Champion-Game">
+								<button>SOURCE CODE</button>
+							</a>
+						</div>
+				</section>
+
+				<section class="portfolio-left lastPortfolio-item hidden">
 					<h3>Paul Saada Web Development Portfolio</h3>
-					<p class="portfolio-type">HTML 5, CSS 3, Flexbox, PHP, Animate.CSS</p>
+					<p class="portfolio-type">HTML 5, CSS 3, Flexbox, JavaScript, PHP</p>
 					<p>You're on the live demo right now! Check this URL out on your phone to see the mobile version. How'd I do? Send me an <a href="#contact">email</a> and let me know.</p>
 					<div class="portfolio-buttons">
 							<a href="https://paulsaada.com/">
@@ -129,7 +152,7 @@
 						</div>
 				</section>
 
-				<section class="great-idea">
+				<section class="great-idea hidden">
 					<h3 class="colored-text">Got a great idea for a website?</h3>
 					<p>Whether it's an idea for a complex multi-page responsive website for your organization or a mobile-first landing page for an exciting new product, I'd love to hear from you!</p>
 					<div class="portfolio-buttons">
@@ -141,10 +164,10 @@
 			</div>
 
 				
-				<h1 class="title" id="dev">Developer Profile</h1>
+				<h1 class="title hidden" id="dev">Developer Profile</h1>
 	
 				<section class="dev">
-					<div class="profile-left">	
+					<div class="profile-left hidden">	
 						<div>
 							<div class="dev-subtitle">
 								<h3>Skills</h3>
@@ -156,7 +179,6 @@
 										<li>CSS 3</li>
 										<li>Flexbox</li>
 										<li>JavaScript</li>
-										<li>jQuery</li>
 										<li>Project Management</li>
 										<li>User Interface Design</li>
 									</ul>
@@ -173,32 +195,33 @@
 										<li>Sublime Text</li>
 										<li>Git</li>
 										<li>GitHub</li>
-										<li>iTerm 2</li>
 										<li>CodeKit</li>
 										<li>Browser Dev Tools</li>
+										<li>Command Line</li>
 									</ul>
 								</div>
 						</div>
 					</div>
 						
-					<div class="profile-right">
+					<div class="profile-right hidden">
 						<div>
 							<h3>About</h3>
 						</div>
 
 						<div class="dev-bio">
+							<p>I'm a web developer with a creative eye and a drive to constantly beat former bests. I'm currently based in NYC.</p>
 							<p>I’ve been editing HTML since 2010 when I first discovered blogging and ever since then, I caught the coding bug and kept finding new ways to solve problems using my skills as a developer. In subsequent years, I’ve added CSS and JavaScript to my skillset and I’m currently capable of creating beautiful and fully-responsive websites for individuals and businesses alike.</p> 
 							<p>I pride myself in adhering to the best web practices and writing/contributing clean, sustainable code for every project I undertake.</p>
 							<p>These days, I look for projects to collaborate with other developers on and finding teams where I can use my skills and interests to finding creative solutions to difficult problems.</p>
-							<p>If you’d like to speak to me about possible opportunities for a front-end developer position at your company, please don’t hesitate to <a href="#contact">contact</a> me.</p>
+							<p>If you’d like to speak to me about possible opportunities for a front-end developer at your company, please don’t hesitate to <a href="#contact">contact</a> me.</p>
 						</div>
 					</div>
 				</section>
 
 				<section>
-					<h1 class="contact-title">Contact Me</h1>
+					<h1 class="contact-title hidden">Contact Me</h1>
 					<div class="contact" id="contact">
-						<div class="contact-form">
+						<div class="contact-form hidden">
   							<form action="contact.php" method="post">
   								<div class="name-field">
   									<div class="first-name">
